@@ -1,4 +1,5 @@
-baseURL = 'https://mhartz25.github.io/blog_hugo/'
+baseURL = 'http://example.org'
 languageCode = 'en-us'
 title = 'Matt Hartz'
-theme="mini"
+theme='hugo-theme-mini'
+
