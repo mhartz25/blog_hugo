@@ -3,6 +3,7 @@ title: "Nominal Mastery"
 date: "2022-01-01"
 menu: "main"
 description: "Some thoughts"
+# draft: True
 ---
 
 <!-- Nominal Mastery is a term I’ve come up with to describe a major way in which I’ve tried to live my life[1]. I define it as being good enough at a particular skill to be considered reasonably better than the average person, but not necessarily being good enough at that skill for it to be your profession. As inconsequential as that sounds, it has become quite foundational to who I am[2]. Becoming a Nominal Master in as many things as possible.
