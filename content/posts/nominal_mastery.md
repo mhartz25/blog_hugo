@@ -5,7 +5,7 @@ menu: "main"
 description: "Some thoughts"
 ---
 
-Nominal Mastery is a term I’ve come up with to describe a major way in which I’ve tried to live my life[1]. I define it as being good enough at a particular skill to be considered reasonably better than the average person, but not necessarily being good enough at that skill for it to be your profession. As inconsequential as that sounds, it has become quite foundational to who I am[2]. Becoming a Nominal Master in as many things as possible.
+<!-- Nominal Mastery is a term I’ve come up with to describe a major way in which I’ve tried to live my life[1]. I define it as being good enough at a particular skill to be considered reasonably better than the average person, but not necessarily being good enough at that skill for it to be your profession. As inconsequential as that sounds, it has become quite foundational to who I am[2]. Becoming a Nominal Master in as many things as possible.
 
 It might be easiest to start by saying what Nominal Mastery is not. It is not being an Intermediate, nor is it the Slope of Enlightenment that you’ll see on a Dunning-Kruger curve. To me both of those are steps along a development curve where someone is trying to climb as high as they can get. Either of those classifications inherently signal that someone has more progress left to make. Nominal Mastery is more of an end goal. Another thing Nominal Mastery doesn’t work for is for whatever skills pertain to their career of choice. This is why in my definition of Nominal Mastery was the fact that it’s a skill level in which you can’t make a profession out of it. I limit the use of Nominal Mastery as a goal for hobbies or side projects.  
 
@@ -28,4 +28,4 @@ If you made it this far into the post I’d love to hear from you. Feel free to 
 
 [2] that being a naive 23 year old
 
-[3] I don’t believe growth is linear but I’m going to ignore that for the purposes of this article
+[3] I don’t believe growth is linear but I’m going to ignore that for the purposes of this article -->
