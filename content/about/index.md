@@ -16,4 +16,4 @@ Email: mthartz25@gmail.com
 
 
 
-* If you want to join the 3 people I'm not related to who have asked to get email updates when I post something. You'rer gonna have to email me and I'll add you to that very manual process.
+* If you want to join the 3 people I'm not related to who have asked to get email updates when I post something. You're gonna have to email me and I'll add you to that very manual process.

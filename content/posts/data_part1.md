@@ -3,6 +3,7 @@ title: "Analyzing Data Part 1"
 date: "2022-02-01"
 menu: "main"
 description: "Some thoughts"
+draft: True
 ---
 
 This is part one in hopefully a, multipart, blog series I’m working on titled How to Analyze Data, where the goal is to give people the foundational knowledge and tools necessary to start thinking about data critically. Every single person reading this looks at data in some form throughout every day of their lives. In most cases it’s very trivial or inconsequential. Sometimes it’s both. But one area we can all use help on is in times when things aren’t trivial and things aren’t inconsequential. Suddenly our ability to navigate those situations can become important. And hopefully through these series of posts I can help to strengthen each person’s ability to fend for themselves. Here is my disclaimer now to say I am not perfect, but it’s likely I have thought about this topic much longer than you have and I think I’ve been able to develop a good sense of what works and what doesn’t. You don’t have to, nor should you take everything I say as fact. But if you can come away from this series with one new way to think about data and one way in which you think I’m dead wrong then I will have succeeded as an author. Now without further ado… 

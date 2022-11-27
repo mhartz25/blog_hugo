@@ -43,3 +43,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
     name = "Twitter"
     url = "https://twitter.com/MattHartz_"
     weight = 4
+[[menu.primary]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/matt-hartz/"
+    weight = 5
