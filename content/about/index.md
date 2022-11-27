@@ -1,5 +1,5 @@
 
-Hi, welcome to my personal site. My plan is to use this site in somewhat random ways. Sometime there will be content related to Data, sometimes it might be some hypothesis I have about the world, or any other thing that might interest me enough to write about. This site will probably stay pretty barebones outside of the written content.
+Hi, welcome to my personal site. My plan is to use this site in somewhat random ways. Sometime there will be content related to Data, sometimes it might be some rambling I have about the world, or any other thing that might interest me enough to write about. This site will probably stay pretty barebones outside of the written content, since it's not really a focus to dedicate development time to it.
 
 If you've somehow found this website and we haven't met here's some quick information:
 - I currently work as a Data Analyst at NeuroFlow in Philadelphia

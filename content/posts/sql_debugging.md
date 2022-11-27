@@ -1,12 +1,12 @@
 ---
 title: "How I Debug SQL"
-date: "2022-11-14"
+date: "2022-11-27"
 menu: "main"
 description: "Some thoughts"
 ---
 
 
-Debugging any type of code is frustrating and tedious. And since the most frequent and most dangerous SQL errors occur even when the code compiles, it can be hard to know where to start when attempting to debug. Moreover, it's not always possible to have a strong instinct on whether or not the returned data is correct, making it all the more crucial to have a process for debugging and double checking your query
+Debugging any type of code is frustrating and tedious. And since the most frequent and most dangerous SQL errors occur even when the code compiles, it can be hard to know where to start when attempting to debug. Moreover, it's not always possible to have a strong instinct on whether or not the returned data is correct, making it all the more crucial to have a process for debugging and double checking your query.
 
 Writing SQL is a huge part of my job, and I've slowly developed a checklist for my debugging to help me step through my code in the most efficient way. Here are those steps that I try to run through:
 
@@ -16,7 +16,7 @@ Writing SQL is a huge part of my job, and I've slowly developed a checklist for 
 - my number one piece of advice is also the most nebulous. Check all the assumptions you might have. It's just as probable that your understanding of a particular table is off than the SQL you're writing is wrong. No assumption in this step is too trivial, take equal caution of each of them
 
 ####  Start with Where
-- A huge porportion of problems arise from `WHERE` clauses. Manipulating different parts of this query is a good way to make sure that the results change in the way your expect them to.
+- A huge porportion of problems arise from `WHERE` clauses. Manipulating different parts of this section is a good way to make sure that the results change in the way your expect them to.
 - If you have multiple conditions -- especially if both `AND` and `OR` are present -- it can be very easy to lose sight of what the behavior is for each. Try changing `ANDs` and `ORs` back and forth as well as commenting out portions. You might be surprised to find the way in which that affects the results
 
 ####  One Row per What?
@@ -29,10 +29,10 @@ Writing SQL is a huge part of my job, and I've slowly developed a checklist for 
 - Using comparison operators(>=, >, etc.) can have some unexpected results if your data is incomplete. For example, when using these operators on date fields it will filter out all records where the data field is null. Forgeting about something like that can greatly skew your results
 ####  Know Your Tables
 - when inner joining tables make sure the relevant data is consistent in both tables. 
-- some tables might have idiosyncracies that aren't obvious on the surface. For example, your Sales table might have a column for when payment failed. If you go to sum all Sales in that table, it will be important to remember to filter out all cases where payment failed
+- some tables might have idiosyncracies that aren't obvious on the surface. For example, your Sales table might have a column for when payment failed. If you go to sum all Sales in that table, it could be important to remember to filter out all cases where payment failed
 
 #### Triple Check
-- did you just find the hidden statistical relationship that is going to 10x your companies revenue? Spoiler Alert: No you didn't. Triple check and quadruple check each line in your code. Until you can properly explain each line of code it might be best to keep that Slack message to the CEO in the drafts.
+- did you just find the hidden statistical relationship that is going to 10x your companies revenue? Probably not. Triple check and quadruple check each line in your code. Until you can properly explain each line it might be best to keep that Slack message to the CEO in the drafts.
 
 #### Check the Graveyard
 - when spot checking your data make sure to find out what the data isn't showing. Just because the row count matches your number of registered users, doesn't automatically mean you're good to go. Are there any other parts of the query that might accidently contribute to filtering out additional data
