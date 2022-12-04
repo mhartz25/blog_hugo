@@ -1,6 +1,6 @@
 ---
 title: "Nominal Mastery"
-date: "2022-11-01"
+date: "2022-12-04"
 menu: "main"
 description: "Some thoughts"
 
