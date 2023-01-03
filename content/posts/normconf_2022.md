@@ -8,7 +8,6 @@ description: "Some thoughts"
 
 
 
-### General Themes to Callout
 
 I spent part of my holiday going through the backlog of all the great NormConf talks. There were some awesome topics discussed by some great folks in the data community. Tried to compile some notes and figured I'd post them here. I don't have notes for every talk so be sure to check out https://normconf.com/ to find info on all the talks/speakers.
 
