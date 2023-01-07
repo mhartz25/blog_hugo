@@ -9,7 +9,7 @@ description: "Some thoughts"
 
 
 
-I spent part of my holiday going through the backlog of all the great NormConf talks. There were some awesome topics discussed by some great folks in the data community. Tried to compile some notes and figured I'd post them here. I don't have notes for every talk so be sure to check out https://normconf.com/ to find info on all the talks/speakers.
+I spent part of my holiday going through the backlog of all the great NormConf talks. There were some awesome topics discussed by some great folks in the data community. Tried to compile my notes and figured I'd post them here. I don't have notes for every talk so be sure to check out https://normconf.com/ to find info on all the talks/speakers.
 
 Two themes I found consistent throughout many of the talks:
 - Most people are working on very unsexy but super important data work within their companies
@@ -94,7 +94,7 @@ Two themes I found consistent throughout many of the talks:
 
 ---
 
-### What’s the simpliest possible thing that might work, why didn’t you try that first?
+### What’s the simplest possible thing that might work, why didn’t you try that first?
 ###### by Joel Grus
 
 - his favorite question to ask
