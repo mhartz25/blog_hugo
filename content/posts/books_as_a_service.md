@@ -27,18 +27,18 @@ Books – better than any other medium in my opinion – can provide a window in
  
 The books I’d offer up as part of this exercise and the briefest explanation I can give as to why:
 
-Thinking Fast and Slow by Daniel Kahnaman
-I find Behavior Economics to be fascinating, we are fallible creatures. 
-Taleb’s Incerto
-They’re all good but specifically Fooled by Randomness and The Black Swan offer valuable lessons in cutting through the traps people fall for when dealing with numbers.
-Range by David Epstein
-Breadth vs depth, which is more important
-Give and Take by Adam Grant
-Giving is pascal’s wager
-East of Eden by John Steinbeck
-What I believe it means to be human boiled down to a single word
-Factfulness by Hans Rosling
-I think this book is the best lesson on “how to think about data” I’ve encountered
+- Thinking Fast and Slow by Daniel Kahnaman
+    - I find Behavior Economics to be fascinating, we are fallible creatures. 
+- Taleb’s Incerto
+    - They’re all good but specifically Fooled by Randomness and The Black Swan offer valuable lessons in cutting through the traps people fall for when dealing with numbers.
+- Range by David Epstein
+    - Breadth vs depth, which is more important
+- Salt, Fat, Acid, Heat
+    - fundamentals are important in any domain
+- East of Eden by John Steinbeck
+    - What I believe it means to be human boiled down to a single word
+- Factfulness by Hans Rosling
+    - I think this book is the best lesson on “how to think about data” I’ve encountered
 
 Would love to hear other people’s lists, so feel free to send them my way.
  
