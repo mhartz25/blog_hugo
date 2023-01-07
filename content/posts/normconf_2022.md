@@ -2,7 +2,7 @@
 title: "NormConf 2022 Notes"
 date: "2023-01-02"
 menu: "main"
-description: "Some thoughts"
+description: "NormConf2022 had some great data talk"
 
 ---
 

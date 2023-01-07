@@ -2,7 +2,7 @@
 title: "Books as a Social Network"
 date: "2023-01-06"
 menu: "main"
-description: "Some thoughts"
+description: "Books act as a window into how someone thinks"
 meta_img: images/best_friends.jpeg
 
 ---
