@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> NormConf 2022 Notes - Matt Hartz </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="NormConf2022 had some great data talk" />
+    <meta property="og:site_name" content="Matt Hartz" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://matthartz.me/blog_hugo/posts/normconf_2022/" />
+    <meta property="og:title" content="NormConf 2022 Notes" />
+    <meta property="og:image" content="https://matthartz.me/blog_hugo/" />
+    <meta property="og:description" content="NormConf2022 had some great data talk" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="NormConf 2022 Notes" />
+    <meta name="twitter:description" content="NormConf2022 had some great data talk" />
+    <meta name="twitter:image" content="https://matthartz.me/blog_hugo/" />
+
+    <link rel="canonical" href="https://matthartz.me/blog_hugo/posts/normconf_2022/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://matthartz.me/blog_hugo/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://matthartz.me/blog_hugo/images/favicon.png">
+
+    
+    <link href="https://matthartz.me/blog_hugo/index.xml" rel="alternate" type="application/rss+xml" title="Matt Hartz" />
+    
+</head>
+
+<body>
+    
+    <div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://matthartz.me/blog_hugo/">
+                    <h1 class="name">Matt Hartz</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://matthartz.me/blog_hugo/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://matthartz.me/blog_hugo/about/">
+                        
+                        About
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/mhartz25">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/MattHartz_">
+                        
+                        Twitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/matt-hartz/">
+                        
+                        LinkedIn
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <h1 class="mx-0 mx-md-4">NormConf 2022 Notes</h1>
+                    <div class="markdown">
+                        
+    <p>I spent part of my holiday going through the backlog of all the great NormConf talks. There were some awesome topics discussed by some great folks in the data community. Tried to compile my notes and figured I&rsquo;d post them here. I don&rsquo;t have notes for every talk so be sure to check out <a href="https://normconf.com/">https://normconf.com/</a> to find info on all the talks/speakers.</p>
+<p>Two themes I found consistent throughout many of the talks:</p>
+<ul>
+<li>Most people are working on very unsexy but super important data work within their companies</li>
+<li>Get really good at the fundamentals, it will make you better at advanced stuff</li>
+</ul>
+<hr>
+<h3 id="group-by-statements-that-save-the-day">Group by Statements that Save the Day</h3>
+<h6 id="by-vincent-d-warmerdam">by Vincent D. Warmerdam</h6>
+<ul>
+<li>it’s unlikely some ML finding will surprise you, Data Visualization findings can surprise you</li>
+<li>what if there are dead chickens in the dataset</li>
+<li>made a library called <code>doubtlab</code> for trying to find bad labels in your data</li>
+<li>worry less about “must have skills”, focus on fundamentals</li>
+<li>you can’t get a certificate in common sense and critical thinking</li>
+<li><a href="https://deon.drivendata.org/examples/">https://deon.drivendata.org/examples/</a>
+<ul>
+<li>mentions the above for a checklist before pushing something to prod</li>
+</ul>
+</li>
+<li>write more TIL blogs</li>
+</ul>
+<hr>
+<h3 id="five-semesters-of-linear-algebra-and-all-i-do-is-solve-python-dependency-problems">Five semesters of linear algebra and all I do is solve Python dependency problems</h3>
+<h6 id="by-tim-hopper">by Tim Hopper</h6>
+<ul>
+<li>reflection on his own interests in his career and how they’ve shifted</li>
+<li>your career is unlikely to follow the path you think it will</li>
+</ul>
+<hr>
+<h3 id="nlp-tip-and-tricks">NLP Tip and Tricks</h3>
+<h6 id="by-lynn-cherny">by Lynn Cherny</h6>
+<ul>
+<li>recommends UMAP for data exploration</li>
+<li>string_grouprt library can be used for trying to solve string similarity problems</li>
+</ul>
+<hr>
+<h3 id="how-small-can-i-get-that-docker-container">How Small Can I get that Docker Container</h3>
+<h6 id="by-matthijs-brouns">by Matthijs Brouns</h6>
+<ul>
+<li>.dockerignore used in a similar way to .gitignore</li>
+<li><code>dive</code> is a tool that allows you to look at what your docker image looks like</li>
+<li>every run statement in your dockerfile creates a new layer in the docker image
+<ul>
+<li>each layer is essentially a diff of the previous layer</li>
+<li>you can add and delete stuff in the same run statement to save space</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="spark-horror-stories-from-the-field">Spark Horror Stories from the Field</h3>
+<h6 id="by-guenia-izquierdo">by Guenia Izquierdo</h6>
+<ul>
+<li>modularize your code</li>
+<li>write unit tests</li>
+<li>remove unnecessary code from files that will live in prod</li>
+<li>never had the chance to use spark before, so not much else to add from this talk</li>
+</ul>
+<hr>
+<h3 id="geriatric-data-science-life-after-senior">Geriatric Data Science: Life after Senior</h3>
+<h6 id="by-luca-belli">by Luca Belli</h6>
+<ul>
+<li>talk is about the IC vs leadership ladder for Data scientists</li>
+<li>IC’s don’t typically get the same level of leadership training as a manager, but there’s still some expectation for them to lead
+<ul>
+<li>just because you’re an IC doesn’t mean you can ignore leadership development</li>
+</ul>
+</li>
+<li>the higher you climb the IC ladder the more people will expect management type skills from you
+<ul>
+<li>should be mindful of this and spend more time training them</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="hack-your-way-to-a-better-api">Hack Your Way to a Better API</h3>
+<h6 id="by-zachary-blackwood">by Zachary Blackwood</h6>
+<ul>
+<li>the internals of the software you’re using may be more accessible than you think</li>
+<li>monkey-patching
+<ul>
+<li>updating or changing code of a piece of software at runtime</li>
+</ul>
+</li>
+<li>when something isn’t working on imported code, start debugging by looking at its docstring
+<ul>
+<li>in your IDE this should actually bring you to the file that is being run…you have the ability to change this file if you’d like</li>
+<li>not best practice to do this at the source level because you’re unlikely to document it and it will disappear when you update your packages</li>
+<li>other option is to write your new, desired function within your own file that overwrites the old function</li>
+</ul>
+</li>
+<li>the develop tools that you find in chrome can also be found in many apps you use, including VScode</li>
+<li>uses a website called <a href="http://curlconverter.com">curlconverter.com</a> to format cURL commands to the language/library of your choice</li>
+</ul>
+<hr>
+<h3 id="whats-the-simplest-possible-thing-that-might-work-why-didnt-you-try-that-first">What’s the simplest possible thing that might work, why didn’t you try that first?</h3>
+<h6 id="by-joel-grus">by Joel Grus</h6>
+<ul>
+<li>his favorite question to ask</li>
+<li>in 2022 implementing bert models can be simple, even though the model is more sophisticated than Logistic Regression or Naive Bayes</li>
+<li>as our tools get better the boundary between complex and simple changes</li>
+<li>people create systems that abstract away complexity, this is different than dumbing something down</li>
+<li>think about ways to abstract complexity away from things you are often doing</li>
+<li>simplicity is something we only discover through experience and with confidence
+<ul>
+<li>simplicity is not the sign of a newbie</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="its-all-about-cost-how-to-think-about-machine-learning-products">It’s all about cost: How to think about Machine Learning Products</h3>
+<h6 id="by-peter-sobot">by Peter Sobot</h6>
+<ul>
+<li>engineering is about building the best thing you can given the constraint of the problem</li>
+</ul>
+<hr>
+<h3 id="ml-doesnt-always-replace-rules-sometimes-they-work-together">ML doesn’t always replace rules, sometimes they work together</h3>
+<h6 id="by-jeremy-jordan">by Jeremy Jordan</h6>
+<ul>
+<li>Traditional approach for ML
+<ul>
+<li>first deploy a heuristic approach
+<ul>
+<li>Rules based approach</li>
+<li>e.g. for a spam filter you can give it specific words to look for. Then as time goes on you can monitor user-behavior to see how they might label messages as spam or pull messages out of the spam folder</li>
+</ul>
+</li>
+<li>once you have labelled data you can take a more ML approach</li>
+</ul>
+</li>
+<li>rules plus ML can give you much greater results than either approach used independently</li>
+<li>combine the two systems in a policy layer
+<ul>
+<li>could be as simple as an OR statement. i.e. if one system evaluates to True then take that</li>
+</ul>
+</li>
+<li>have an evaluation set that you can use to more easily test versions of your system against</li>
+</ul>
+<hr>
+<h3 id="all-my-machine-learning-problems-are-actually-data-management-problems">All my machine learning problems are actually data management problems</h3>
+<h6 id="by-shreya-shankar">by Shreya Shankar</h6>
+<ul>
+<li>most ML failures exist outside of whatever business logic that is running ML algos</li>
+<li>assumptions that exist in dev/training do not always translate to production</li>
+<li>telemetry from prod systems is important</li>
+</ul>
+<hr>
+<h3 id="ethan-rosenthal-and-the-m1-misadventure">Ethan Rosenthal and the M1 misadventure</h3>
+<h6 id="by-ethan-rosenthal">by Ethan Rosenthal</h6>
+<ul>
+<li>has a medium article talking about managing python env for DS</li>
+<li>my take away is, python dependencies and environment management are such a mess, believe it or not</li>
+<li>reproducibility of an environment is important. If you need to revisit an analysis from 6 months ago, you should be able to have it up an running easily</li>
+</ul>
+<hr>
+<h3 id="data-is-the-new-coffee">Data is the new coffee</h3>
+<h6 id="by-peter-baumgartner">by Peter Baumgartner</h6>
+<ul>
+<li>talks about practices for annotating data for data science purposes</li>
+<li>calibration and agreement
+<ul>
+<li>each of your annotators should be on the same page for what each criteria or label means</li>
+<li>how often multiple people agree to give the same case the same label is important</li>
+<li>want to have annotation guidelines that give people some structure on what to do</li>
+</ul>
+</li>
+<li>as you encounter more data it is normal to see your annotation task drift a little bit
+<ul>
+<li>don’t expect to get it right the first time</li>
+</ul>
+</li>
+<li>you don’t necessarily need to limit your annotation task to a subset of domain experts</li>
+<li>it will take iterations until you get everyone on same page and your annotated dataset becomes “gold” level
+<ul>
+<li>“it’s going to take longer than you think”</li>
+</ul>
+</li>
+<li>having a correlation amongst annotators at .9 and above is very rigourous</li>
+</ul>
+<hr>
+<h3 id="how-to-translate-to-pm-speak-and-back">How to Translate to PM speak and back</h3>
+<h6 id="by-katie-bauer">by Katie Bauer</h6>
+<ul>
+<li>early on would give PMs too much detail, which they didn’t seem to like</li>
+<li>“assume good intent”, believe that you and the person you are working with have each other’s best interests at heart
+<ul>
+<li>she later amended this to “assume good intent, but consider incentives”</li>
+</ul>
+</li>
+<li>product managers speak a language of progress</li>
+<li>most questions PMs ask you are implicitly causal.
+<ul>
+<li>Focus your work on things they can control</li>
+<li>prioritize logical consistency over being technically correct</li>
+<li>describe your results as inputs and outputs</li>
+</ul>
+</li>
+<li>plan your work according to their positioning
+<ul>
+<li>while not all environments are going to be cutthroat, PMs are inherently competing with other PMs</li>
+</ul>
+</li>
+<li>accept that no translation will be perfect</li>
+<li>your suggestions will more be used as guardrails, rather than taken as bible</li>
+<li>pick your battles when you try to apply a lot of rigor to a situation, should be when stakes are high</li>
+<li>arming PMs with data that they can take and apply to a different context can be valuable in helping them be bought into the idea of data</li>
+<li>she likes a hub and spoke style data team structure</li>
+</ul>
+<hr>
+<h3 id="tracer-bullets-and-working-backwards-simple-frameworks-for-solving-problems">Tracer Bullets and Working Backwards: Simple Frameworks for Solving Problems</h3>
+<h6 id="by-caitlin-hudon">by Caitlin Hudon</h6>
+<ul>
+<li>premortems are a good way to tackle known unknowns
+<ul>
+<li>can do on your own or ask SMEs questions to fill out this framework</li>
+</ul>
+</li>
+<li>Tracer bullets can be used in the unknown unknown domain
+<ul>
+<li>they give real time feedback</li>
+<li>use minimum amount of code to get code to next step of project</li>
+<li>different from a prototype, because tracer bullets are more of an along-the-way, iterative process</li>
+<li>expounded on further in the book “the Pragmatic Programmer”</li>
+</ul>
+</li>
+<li>overall goal is to use frameworks to increase the amount of feedback you are getting throughout all stages of development</li>
+<li>also recommends the book “Thinking in Bets” by Annie Duke</li>
+</ul>
+<hr>
+<h3 id="building-an-https-model-api-for-cheap">Building an HTTPS Model API for Cheap</h3>
+<h6 id="by-ben-labaschin">by Ben Labaschin</h6>
+<ul>
+<li>we do not have enough time</li>
+<li>weigh the trade-offs of your tools before choosing software</li>
+<li>normy software
+<ul>
+<li>reliable</li>
+<li>an investment</li>
+<li>easy to learn</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="datas-desire-paths">Data’s Desire Paths</h3>
+<h6 id="by-james-kirk">by James Kirk</h6>
+<ul>
+<li>best way to think about Recommender systems is as a desire path
+<ul>
+<li>a desire path describes the phenomena of not putting down a walkway on a college campus until you see the path people take to cut across the grass</li>
+</ul>
+</li>
+<li>a healthy recommender project has
+<ul>
+<li>clearly defined users</li>
+<li>a measurable definition of success</li>
+<li>a clear relationship between recommender success and business success</li>
+<li>data and a tech stack ready to implement and iterate on recommendations</li>
+</ul>
+</li>
+<li>types of recommendations:
+<ul>
+<li>basic recommendations
+<ul>
+<li>you are webpage X so we will point you towards webpage Y</li>
+</ul>
+</li>
+<li>personalization</li>
+<li>omakase
+<ul>
+<li>“hey alexa, play music”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>don’t be afraid to pre-calculate recommendations as you scale up</li>
+<li>recommends a book by Kim Falk for intro to recommenders</li>
+</ul>
+<hr>
+<h3 id="the-zen-of-tedium">The Zen of Tedium</h3>
+<h6 id="by-brandon-rohrer">by Brandon Rohrer</h6>
+<ul>
+<li>you only have so many hours to be productive within a day</li>
+<li>there are trade-offs for doing things the hard way vs automating vs doing tedious work</li>
+</ul>
+<hr>
+<h3 id="how-should-i-represent-the-intermediate-thing">How should I represent the intermediate thing?</h3>
+<h6 id="by-brianna-mchorse">by Brianna McHorse</h6>
+<ul>
+<li>data structures are clear at the beginning and end, but things are less clearly defined in the interim</li>
+<li>care about performance later. You can only do so many things at once</li>
+<li>Heuristics for choosing data structures
+<ul>
+<li>dict: I am a human with a human brain</li>
+<li>defaultdict: I am a human and i want to add things as i go</li>
+<li>class: I am a human and I’m very sure about what’s going into this object</li>
+<li>list: I have several things, i want to sort them, and I don’t mind if they change</li>
+<li>tuple: I only have a few things, they’re not going to change, I don’t need to access them</li>
+<li>namedtuple: ??? maybe if things really need to be immutable
+<ul>
+<li>most cases can just use a dict</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="id-have-written-a-shorter-solution-but-i-didnt-have-the-time">I’d have written a shorter solution but i didnt have the time</h3>
+<h6 id="by-jd-long">by JD Long</h6>
+<ul>
+<li>tells a story about some study where people’s only thought was to add something, until they were prompted that removing something is an option too
+<ul>
+<li>additive ideas come to mind quickly, but subtractive ideas require more cognitive effort</li>
+<li>e.g. if you give someone a recipe and say how do we makes this better, almost no one will attempt to remove something</li>
+</ul>
+</li>
+<li>the MVP model is a subtractive priming prompt</li>
+<li>writing a reproducible example(reprex) is a critical tech skill
+<ul>
+<li>minimum reproducible example</li>
+<li>reprex debugging is akin to rubber duck debugging</li>
+<li>helps to remove noise of other things involved and isolate to just what your problem is</li>
+</ul>
+</li>
+<li>don’t try to boil the ocean, build things thrice
+<ul>
+<li>first time there’s bugs, second time you can avoid them, third time is when you make it pretty</li>
+</ul>
+</li>
+<li>on his team of analysts the top 2 success criteria are 2 sides of the same coin
+<ul>
+<li>ask a lot of questions</li>
+<li>don’t try to fake it if you don’t know it</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="just-use-one-big-machine-for-model-training-and-inference">Just use one big machine for model training and inference</h3>
+<h6 id="by-josh-wills">by Josh Wills</h6>
+<ul>
+<li>be careful at what you get good at</li>
+<li>using one big machine is a paradigm strategy for keeping things simple</li>
+<li><code>htop</code> is a unix tool to see underlying process running on machine
+<ul>
+<li>can combine with <code>tail</code></li>
+</ul>
+</li>
+<li>he is a DuckDB enthusiast</li>
+</ul>
+<hr>
+<h3 id="data-driven-promotions">Data Driven Promotions</h3>
+<h6 id="by-rose-wiegley">by Rose Wiegley</h6>
+<ul>
+<li>using data to move up in your corp
+<ul>
+<li>what matters?
+<ul>
+<li>make a responsibility matrix, if your company doesn’t already have anything like this
+<ul>
+<li>idea of proving you are already doing the next level’s job before being promoted</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>track progress
+<ul>
+<li>keep an ongoing brag document
+<ul>
+<li>organize it by the same categories that are in your responsibility matrix</li>
+<li>should be your map of where you are and where you need to go</li>
+<li>be proactive about this</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>frame your review</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="dont-do-invisible-work">Don’t Do Invisible Work</h3>
+<h6 id="by-chris-albon">by Chris Albon</h6>
+<ul>
+<li>record your work and tell people about it</li>
+<li>if you don’t consciously spend time to track your work, you will never remember it and it will be forgotten
+<ul>
+<li>if it’s not remembered it’s like it never happened</li>
+</ul>
+</li>
+<li>no one is going to do this for you</li>
+<li>work that tends to be invisible
+<ul>
+<li>mentorship</li>
+<li>ad-hoc work</li>
+</ul>
+</li>
+<li>he just uses an activity log. Keeps a text file open all day and write a bunch of one line entries
+<ul>
+<li>dump in anything that might be useful</li>
+</ul>
+</li>
+<li>the goal is if someone asks your boss what you did/do, they have a deep well of concrete examples to choose from</li>
+</ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo=""
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+
+    
+</body>
+
+</html>

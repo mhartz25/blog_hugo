@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> How I Debug SQL - Matt Hartz </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="Some thoughts" />
+    <meta property="og:site_name" content="Matt Hartz" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://matthartz.me/blog_hugo/posts/sql_debugging/" />
+    <meta property="og:title" content="How I Debug SQL" />
+    <meta property="og:image" content="https://matthartz.me/blog_hugo/" />
+    <meta property="og:description" content="Some thoughts" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="How I Debug SQL" />
+    <meta name="twitter:description" content="Some thoughts" />
+    <meta name="twitter:image" content="https://matthartz.me/blog_hugo/" />
+
+    <link rel="canonical" href="https://matthartz.me/blog_hugo/posts/sql_debugging/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://matthartz.me/blog_hugo/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://matthartz.me/blog_hugo/images/favicon.png">
+
+    
+    <link href="https://matthartz.me/blog_hugo/index.xml" rel="alternate" type="application/rss+xml" title="Matt Hartz" />
+    
+</head>
+
+<body>
+    
+    <div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://matthartz.me/blog_hugo/">
+                    <h1 class="name">Matt Hartz</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://matthartz.me/blog_hugo/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://matthartz.me/blog_hugo/about/">
+                        
+                        About
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/mhartz25">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/MattHartz_">
+                        
+                        Twitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/matt-hartz/">
+                        
+                        LinkedIn
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <h1 class="mx-0 mx-md-4">How I Debug SQL</h1>
+                    <div class="markdown">
+                        
+    <p>Debugging any type of code is frustrating and tedious. And since the most frequent and most dangerous SQL errors occur even when the code compiles, it can be hard to know where to start when attempting to debug. Moreover, it&rsquo;s not always possible to have a strong instinct on whether or not the returned data is correct, making it all the more crucial to have a process for debugging and double checking your query.</p>
+<p>Writing SQL is a huge part of my job, and I&rsquo;ve slowly developed a checklist for my debugging to help me step through my code in the most efficient way. Here are those steps that I try to run through:</p>
+<p> </p>
+<h4 id="you-know-what-they-say-about-assuming">You Know What They Say About Assuming</h4>
+<ul>
+<li>My number one piece of advice is also the most nebulous. Check all the assumptions you might have. It&rsquo;s just as probable that your understanding of a particular table is off than the SQL you&rsquo;re writing is wrong. No assumption in this step is too trivial, take equal caution of each of them</li>
+</ul>
+<h4 id="start-with-where">Start with Where</h4>
+<ul>
+<li>A huge porportion of problems arise from <code>WHERE</code> clauses. Manipulating different parts of this section is a good way to make sure that the results change in the way your expect them to.</li>
+<li>If you have multiple conditions &ndash; especially if both <code>AND</code> and <code>OR</code> are present &ndash; it can be very easy to lose sight of what the behavior is for each. Try changing <code>ANDs</code> and <code>ORs</code> back and forth as well as commenting out portions. You might be surprised to find the way in which that affects the results</li>
+</ul>
+<h4 id="one-row-per-what">One Row per What?</h4>
+<ul>
+<li>An important question to ask yourself when you start joining in tables that have different granularities. Should the returned table be one row per user or can a user appear multiple times? When you start aggregating the data it is easy to lose sight of this detail.</li>
+</ul>
+<h4 id="standardize-you-sql">Standardize you SQL</h4>
+<ul>
+<li>If you are part of a larger team where it&rsquo;s necessary for you to read someone else&rsquo;s queries, having conventions for how you write will save you a huge chunk of time. Subqueries vs. CTEs? Will you use <code>GROUP BY</code> and <code>ORDER BY</code> shortcuts? Even the way you choose to space and format your query is something that your team should be on the same page about. Having these things figured out ahead of time is well worth the investment.</li>
+</ul>
+<h4 id="null-comparisons">Null Comparisons</h4>
+<ul>
+<li>Using comparison operators(&gt;=, &gt;, etc.) can have some unexpected results if your data is incomplete. For example, when using these operators on date fields it will filter out all records where the data field is null. Forgeting about something like that can greatly skew your results</li>
+</ul>
+<h4 id="know-your-tables">Know Your Tables</h4>
+<ul>
+<li>When inner joining tables make sure the relevant data is consistent in both tables.</li>
+<li>Some tables might have idiosyncracies that aren&rsquo;t obvious on the surface. For example, your Sales table might have a column for when payment failed. If you go to sum all Sales in that table, it could be important to remember to filter out all cases where payment failed</li>
+</ul>
+<h4 id="triple-check">Triple Check</h4>
+<ul>
+<li>Did you just find the hidden statistical relationship that is going to 10x your companies revenue? Probably not. Triple check and quadruple check each line in your code. Until you can properly explain each line it might be best to keep that Slack message to the CEO in the drafts.</li>
+</ul>
+<h4 id="check-the-graveyard">Check the Graveyard</h4>
+<ul>
+<li>When spot checking your data make sure to find out what the data isn&rsquo;t showing. Just because the row count matches your number of registered users, doesn&rsquo;t automatically mean you&rsquo;re good to go. Are there any other parts of the query that might accidently contribute to filtering out additional data</li>
+</ul>
+<h4 id="use-count-distinct">Use Count Distinct</h4>
+<ul>
+<li>Unless you are specifically trying to count rows, you should be using a <code>DISTINCT</code> within your <code>COUNT</code>. It&rsquo;s very easy to make a mistake that leads to overcounting</li>
+</ul>
+<hr>
+<p>P.S. I&rsquo;m giving myself credit for not titling this post <em>CheQList Manfiesto</em>. That&rsquo;s the type of integrity you can expect from these posts. You&rsquo;re welcome</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo=""
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+
+    
+</body>
+
+</html>

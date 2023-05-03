@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://matthartz.me/blog_hugo/posts/books_as_a_service/</loc>
+    <lastmod>2023-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/</loc>
+    <lastmod>2023-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/posts/</loc>
+    <lastmod>2023-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/posts/normconf_2022/</loc>
+    <lastmod>2023-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/posts/nominal_mastery/</loc>
+    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/posts/sql_debugging/</loc>
+    <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/about/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/categories/</loc>
+  </url><url>
+    <loc>https://matthartz.me/blog_hugo/tags/</loc>
+  </url>
+</urlset>
