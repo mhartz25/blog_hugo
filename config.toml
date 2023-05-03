@@ -1,4 +1,5 @@
 baseurl = "https://matthartz.me/blog_hugo/"
+publishDir = "docs"
 title = "Matt Hartz"
 author = "Matt Hartz"
 canonifyurls = true
