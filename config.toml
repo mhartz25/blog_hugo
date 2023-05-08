@@ -1,4 +1,4 @@
-baseURL = "https://matthartz.me/blog_hugo/"
+baseURL = "https://matthartz.me"
 title = "Matt Hartz"
 author = "Matt Hartz"
 canonifyurls = true
